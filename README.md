@@ -38,58 +38,52 @@ Install the tool globally so it is available anytime:
 pip install claude-code-cli
 Or install with uv tool:
 
+bash
+Copy code
 uv tool install claude-code
-
 Step 2: Verify Installation
+Run the following command to check if the CLI is installed correctly:
 
-Run:
-
+bash
+Copy code
 claude-code --version
-
-
 You should see the version number, confirming the CLI is ready.
 
 📂 Initialize Your Project
-
 Create a new project folder and initialize with Claude + Gemini AI:
 
+bash
+Copy code
 claude-code init my-project --ai google-gemini
-
-
 Or initialize in the current directory:
 
+bash
+Copy code
 claude-code init --here --ai google-gemini
-
 🧭 Core Workflow
-
 Once your project is initialized, use these commands in order:
 
-Define project principles
-
+1️⃣ Define project principles
+bash
+Copy code
 claude-code constitution
-
-
-Specify what you want to build
-
+2️⃣ Specify what you want to build
+bash
+Copy code
 claude-code specify
-
-
-Plan technical architecture
-
+3️⃣ Plan technical architecture
+bash
+Copy code
 claude-code plan
-
-
-Generate tasks
-
+4️⃣ Generate tasks
+bash
+Copy code
 claude-code tasks
-
-
-Implement features
-
+5️⃣ Implement features
+bash
+Copy code
 claude-code implement
-
 ❗ Tips
-
 Restart your terminal if commands are not recognized
 
 Prefer persistent installation for everyday work
@@ -97,5 +91,4 @@ Prefer persistent installation for everyday work
 Keep your specifications clear and non-technical at first
 
 🤝 Contributing
-
 Feel free to fork this repo and submit pull requests with improvements or fixes.
