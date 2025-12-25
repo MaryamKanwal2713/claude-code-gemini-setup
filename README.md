@@ -1,107 +1,207 @@
-# Claude Code + Google Gemini: Step-by-Step Setup Guide
+# Claude Code + Google Gemini: Easy Setup & Getting Started Guide
 
-This repository provides a simple, beginner-friendly guide to setting up Claude Code with Google Gemini.  
-Follow each step carefully to get your environment ready for Spec-Driven Development.
+This repository provides a simple, step-by-step guide to setting up Claude Code with Google Gemini.  
+It is written for beginners who want clear instructions without confusion.
 
 ---
 
 ## 📌 What is Claude Code with Google Gemini?
 
-Claude Code combined with Google Gemini is a powerful AI coding setup that helps you:
+Claude Code combined with Google Gemini is an AI-powered development setup where specifications guide implementation.
 
-- Understand detailed specifications  
-- Generate accurate, maintainable code  
-- Plan and implement complex projects with AI assistance  
+Instead of writing code first and guessing architecture, this approach:
 
-This guide walks you through installation, initialization, and core workflows.
+- Starts with clear specifications  
+- Converts ideas into structured plans  
+- Uses AI to generate and implement code  
+
+In short:  
+📄 Specs don’t just describe software — they help build it.
+
+---
+
+## 🚀 Why Use Claude Code with Google Gemini?
+
+This setup helps you:
+
+- Define clear project principles  
+- Describe features in plain language  
+- Convert ideas into technical plans  
+- Break plans into executable tasks  
+- Implement features step-by-step with AI assistance  
+
+This repository focuses on setup and first usage, not theory.
 
 ---
 
 ## ⚙️ Prerequisites
 
-Make sure you have:
+Before starting, make sure you have:
 
-- Python 3.9 or newer installed  
-- pip or uv tool installed  
-- Access to an AI provider account with Claude + Google Gemini enabled  
-- A terminal (PowerShell, Command Prompt, or Bash)  
+- Python 3.9 or newer  
+- pip or uv installed  
+- A terminal (Command Prompt, PowerShell, or Bash)  
+- Access to Claude and Google Gemini  
 
 ---
 
-## 📦 Installation Steps
+## 📦 Installation Options
 
-### Step 1: Install Claude Code CLI
+You can set up Claude Code in two ways:
 
-Install the tool globally so it is available anytime:
+### ✅ Option 1: Install Once (Recommended)
 
+Install Claude Code globally so it can be used anytime.
+
+Install using pip:
+
+~~~bash
 pip install claude-code-cli
+~~~
 
-Or install with uv tool:
+Or install using uv:
 
+~~~bash
 uv tool install claude-code
+~~~
 
----
+Verify installation:
 
-### Step 2: Verify Installation
-
-Run the following command to check if the CLI is installed correctly:
-
+~~~bash
 claude-code --version
+~~~
 
-You should see the version number, confirming the CLI is ready.
+If a version number appears, installation is complete 🎉
 
 ---
 
-## 📂 Initialize Your Project
+### 🔄 Upgrade Later
 
-Create a new project folder and initialize with Claude + Gemini AI:
+Upgrade using pip:
 
+~~~bash
+pip install -U claude-code-cli
+~~~
+
+Or upgrade using uv:
+
+~~~bash
+uv tool upgrade claude-code
+~~~
+
+---
+
+### 🗑️ Uninstall (if needed)
+
+Uninstall using pip:
+
+~~~bash
+pip uninstall claude-code-cli
+~~~
+
+Or uninstall using uv:
+
+~~~bash
+uv tool uninstall claude-code
+~~~
+
+---
+
+### ⚡ Option 2: Run Without Installing
+
+Run Claude Code directly without installing:
+
+~~~bash
+uvx claude-code --help
+~~~
+
+Create a project:
+
+~~~bash
+uvx claude-code init my-project
+~~~
+
+> ⚠️ This method is best for testing. Long-term use is easier with a persistent install.
+
+---
+
+## 📂 Create a New Project
+
+After installation, create a new project:
+
+~~~bash
 claude-code init my-project --ai google-gemini
+~~~
 
 Or initialize in the current directory:
 
+~~~bash
 claude-code init --here --ai google-gemini
+~~~
 
 ---
 
-## 🧭 Core Workflow
+## 🧭 Core Workflow (Step-by-Step)
 
-Once your project is initialized, use these commands in order:
+Once your project is initialized, follow this workflow:
 
-### 1️⃣ Define project principles
+### 1️⃣ Define Project Principles
 
+~~~bash
 claude-code constitution
+~~~
 
-### 2️⃣ Specify what you want to build
+Define:
+- Code quality expectations  
+- Testing standards  
+- Performance goals  
+- UX consistency  
 
+---
+
+### 2️⃣ Describe What You Want to Build
+
+~~~bash
 claude-code specify
+~~~
 
-### 3️⃣ Plan technical architecture
+Example:
 
+> Build an application that organizes notes into folders. Notes can be tagged and searched. The interface should be minimal and fast.
+
+---
+
+### 3️⃣ Choose the Technical Approach
+
+~~~bash
 claude-code plan
+~~~
 
-### 4️⃣ Generate tasks
+---
 
+### 4️⃣ Generate Development Tasks
+
+~~~bash
 claude-code tasks
+~~~
 
-### 5️⃣ Implement features
+---
 
+### 5️⃣ Implement the Feature
+
+~~~bash
 claude-code implement
+~~~
 
 ---
 
-## ❗ Tips
+## 📁 Suggested Repository Structure
 
-- Restart your terminal if commands are not recognized  
-- Prefer persistent installation for everyday work  
-- Keep your specifications clear and non-technical at first  
-
----
-
-## 🤝 Contributing
-
-Feel free to fork this repo and submit pull requests with improvements or fixes.
-
----
-
-Happy coding with Claude Code + Google Gemini! 🚀
+claude-code-gemini-setup/
+├── README.md
+├── docs/
+│   ├── installation.md
+│   ├── workflow.md
+│   └── troubleshooting.md
+└── examples/
+    └── sample-spec.md
